@@ -1,8 +1,18 @@
-# Terraform files to ignore
+# Terraform directories
 .terraform/
-.terraform.lock.hcl
-terraform.tfstate
-terraform.tfstate.*
+.terraform.tfstate.d/
+*.tfstate
+*.tfstate.*
 crash.log
+override.tf
+override.tf.json
+*_override.tf
+*_override.tf.json
+
+# Sensitive variable files
 *.tfvars
 *.tfvars.json
+
+# IDE / OS files
+.vscode/
+*.log
